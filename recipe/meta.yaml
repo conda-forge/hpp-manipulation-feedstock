@@ -10,6 +10,7 @@ source:
   sha256: 49adccd89f50bb6772281c1d4948a4b5f22e47fbe3131fe0124dedd31f2fe9fc
   patches:
     - patches/tr1_fix.patch
+    - patches/osx_fix_deprecated.patch  # [osx]
 
 build:
   number: 0
