@@ -8,9 +8,6 @@ package:
 source:
   url: https://github.com/humanoid-path-planner/{{ name }}/releases/download/v{{ version }}/{{ name }}-{{ version }}.tar.gz
   sha256: 90c9ae7985daf348a950be63225e3d2bc670b7135f74ac381d6cb1be6e2b82e4
-  patches:
-    - patches/tr1_fix.patch
-    - patches/osx_fix_deprecated.patch  # [osx]
 
 build:
   number: 0
@@ -31,7 +28,7 @@ requirements:
     - urdfdom
     - assimp
     - octomap
-    - hpp-fcl  1.8.1
+    - hpp-fcl
     - hpp-util  {{ version }}
     - hpp-statistics  {{ version }}
     - hpp-pinocchio  {{ version }}
