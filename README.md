@@ -1,11 +1,11 @@
-About hpp-manipulation
-======================
+About hpp-manipulation-feedstock
+================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hpp-manipulation-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/humanoid-path-planner/hpp-manipulation
 
 Package license: LGPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hpp-manipulation-feedstock/blob/main/LICENSE.txt)
 
 Summary: hpp-manipulation subpackage of Humanoid Path Planner suite
 
