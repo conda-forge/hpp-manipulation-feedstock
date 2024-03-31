@@ -1,5 +1,5 @@
 {% set name = "hpp-manipulation" %}
-{% set version = "4.15.1" %}
+{% set version = "5.0.0" %}
 
 package:
   name: {{ name }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/humanoid-path-planner/{{ name }}/releases/download/v{{ version }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 90c9ae7985daf348a950be63225e3d2bc670b7135f74ac381d6cb1be6e2b82e4
+  sha256: b4861a434df06aa60f1636b783e89c523261a8724df7196e2a428c344ed4eca0
   patches:
     - patches/osx_fix_deprecated.patch  # [osx]
 
 build:
-  number: 2
+  number: 0
   skip: true  # [win]
   run_exports:
     - {{ pin_subpackage(name|lower, max_pin='x.x.x') }}
