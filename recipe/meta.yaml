@@ -1,5 +1,5 @@
 {% set name = "hpp-manipulation" %}
-{% set version = "5.1.0" %}
+{% set version = "5.2.0" %}
 
 package:
   name: {{ name }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/humanoid-path-planner/{{ name }}/releases/download/v{{ version }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 18f224044e9367c7ee912e8853d5aba66d38a987db71696e9f335de9a2848aa8
+  sha256: bc11bf10a1f15116ce8b7800e3e17881f6cad1a2db81ef1533332ab943daef92
 
 build:
-  number: 2
+  number: 0
   skip: true  # [win]
   run_exports:
     - {{ pin_subpackage(name|lower, max_pin='x.x.x') }}
@@ -52,7 +52,7 @@ test:
 about:
   home: https://github.com/humanoid-path-planner/{{ name }}
   license: BSD-2-Clause
-  license_file: COPYING
+  license_file: LICENSE
   summary: {{ name }} subpackage of Humanoid Path Planner suite
   description: |
     HPP (Humanoid Path Planner) is a collection of software packages implementing
