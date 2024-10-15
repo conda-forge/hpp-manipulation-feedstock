@@ -9,6 +9,7 @@ cmake .. \
       -DCMAKE_INSTALL_LIBDIR=lib \
       -DHPP_MANIPULATION_HAS_WHOLEBODY_STEP=FALSE \
       -DBUILD_TESTING=FALSE
+
 # Can be updated with True HPP_MANIPULATION_HAS_WHOLEBODY_STEP with body step stack
 make -j${CPU_COUNT} 
 make install
