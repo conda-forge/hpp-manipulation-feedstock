@@ -37,10 +37,12 @@ requirements:
     - hpp-pinocchio  {{ version }}
     - hpp-constraints  {{ version }}
     - hpp-core  {{ version }}
+    - proxsuite
   run:
     - tinyxml
     - qhull
     - qhull-static
+    - proxsuite
 
 test:
   requires:
